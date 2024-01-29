@@ -245,3 +245,7 @@
   new PureCounter();
 
 })()
+
+function changeLogo(){
+  document.getElementById("change_logo").innerText="Gulamin"
+}
