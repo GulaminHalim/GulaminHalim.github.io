@@ -462,7 +462,8 @@ h6 {
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-bottom: 1px;
+  position: relative;
+  bottom: 10px;
   color: #fff;
   background: #34b7a7;
 }
