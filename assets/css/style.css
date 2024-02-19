@@ -484,6 +484,8 @@ h6 {
   }
 }
 
+
+
 @media (max-width: 992px) {
   #hero:before {
     content: "";
