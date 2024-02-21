@@ -39,8 +39,8 @@ h6 {
 
 
 @media screen and (min-width: 720px) {
-  font-size-header {
-    font-size: 10px !important;
+  .font-size-header {
+    font-size: 5px !important;
   }
 }
 
