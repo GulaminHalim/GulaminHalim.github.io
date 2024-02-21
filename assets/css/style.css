@@ -44,6 +44,12 @@ h6 {
   }
 }
 
+@media screen and (max-width: 720px) {
+  #hero {
+    width: 720px !important;
+  }
+}
+
 
 @media (max-width: 992px) {
   #main {
