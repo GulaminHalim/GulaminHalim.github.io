@@ -46,8 +46,8 @@ h6 {
 
 @media screen and (max-width: 720px) {
   #hero {
-    width: 720px !important;
-    height: 40vh;
+    width: 715px !important;
+    height: 35vh;
     background: url("../img/hero2-bg.png") top right;
     background-size: cover;
   }
