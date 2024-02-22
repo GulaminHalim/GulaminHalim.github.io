@@ -452,10 +452,9 @@ h6 {
 @media screen and (max-width: 720px) {
   #hero {
     background: url("../img/hero2-bg.png");
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 700px 1500px;
+    background-size: cover;
     
   }
 }
