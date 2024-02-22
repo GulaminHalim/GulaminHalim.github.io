@@ -448,6 +448,15 @@ h6 {
   }
 }
 
+
+@media screen and (max-width: 720px) {
+  #hero {
+    width: 715px !important;
+    
+  }
+}
+
+
 #hero h1 {
   margin: 0;
   font-size: 48px;
