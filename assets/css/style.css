@@ -44,6 +44,12 @@ h6 {
   }
 }
 
+@media screen and (max-width: 720px) {
+  .rwd {
+    width: 90% !important;
+  }
+}
+
 
 
 
