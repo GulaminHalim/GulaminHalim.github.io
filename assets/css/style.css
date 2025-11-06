@@ -1319,3 +1319,25 @@ section {
 #footer .credits a {
   color: #34b7a7;
 }
+
+/* ==========================================
+   Preserve original image size (>= 720px)
+   ========================================== */
+@media screen and (min-width: 720px) {
+  .portfolio-details-slider img {
+    width: auto !important;         /* biarkan mengikuti ukuran asli */
+    height: auto !important;        /* biarkan proporsi asli */
+    max-width: 100%;                /* agar tidak melebihi lebar container */
+    display: block;
+    margin: 0 auto;                 /* tengah secara horizontal */
+    object-fit: contain;            /* jaga rasio tanpa crop */
+  }
+
+  /* Optional: kalau kamu ingin slider tetap punya background putih */
+  .portfolio-details-slider .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+}
