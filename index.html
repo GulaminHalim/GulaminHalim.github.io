@@ -126,6 +126,36 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
+  import { getAuth } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4z3Gri9vJIuvr67Xc9POpRHqIkCzre7k",
+    authDomain: "portofolio-contact-page-6fbb0.firebaseapp.com",
+    projectId: "portofolio-contact-page-6fbb0",
+    storageBucket: "portofolio-contact-page-6fbb0.firebasestorage.app",
+    messagingSenderId: "1019635524357",
+    appId: "1:1019635524357:web:dd86a926ef1c1730630d6c",
+    measurementId: "G-Y0GXLDDZ7X"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  const auth = getAuth(app);
+
+  console.log("Firebase initialized!");
+</script>
+
 </body>
 
 </html>

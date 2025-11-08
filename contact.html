@@ -35,6 +35,26 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+.btn-send {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.btn-send:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 242, 254, 0.4);
+}
+</style>
 </head>
 
 <body>
@@ -130,7 +150,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="contact.php" method="post" role="form" class="php-email-form">
+            <form  id="contactForm" >
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -146,13 +166,16 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
 
+
+              <!--
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-            
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              -->
+              <br>
+              <div class="text-center"><button type="submit" class="btn-send">Send Message</button></div>
             </form>
 
           </div>
@@ -195,6 +218,44 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-app.js";
+  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.0.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4z3Gri9vJIuvr67Xc9POpRHqIkCzre7k",
+    authDomain: "portofolio-contact-page-6fbb0.firebaseapp.com",
+    projectId: "portofolio-contact-page-6fbb0",
+    storageBucket: "portofolio-contact-page-6fbb0.firebasestorage.app",
+    messagingSenderId: "1019635524357",
+    appId: "1:1019635524357:web:dd86a926ef1c1730630d6c"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // 🔹 Simpan data ke Firestore saat form disubmit
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    try {
+      await addDoc(collection(db, "messages"), {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value,
+        timestamp: new Date()
+      });
+      alert("Data berhasil disimpan!");
+      alert("Terima kasih!");
+      form.reset();
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Gagal menyimpan data!");
+    }
+  });
+</script>
 
 </body>
 
