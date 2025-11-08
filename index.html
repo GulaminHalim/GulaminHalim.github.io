@@ -49,13 +49,25 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About me</a></li>
-          <!--<li><a class="active" href="resume.html">Project details</a></li>-->
-          <li><a href="portfolio-details.html">Project detail</a></li>
-          <li><a href="services.html">Certificate</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="about.html">About Me</a></li>
+
+  <!-- MENU DENGAN SUBMENU -->
+  <li class="dropdown">
+    <a href="#">
+      <span>Project Detail</span> 
+      <i class="bi bi-chevron-down"></i> <!-- ikon panah dropdown -->
+    </a>
+    <ul>
+      <li><a href="project-mobile.html">Mobile</a></li>
+      <li><a href="project-web.html">Web</a></li>
+    </ul>
+  </li>
+
+  <li><a href="services.html">Certificate</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
