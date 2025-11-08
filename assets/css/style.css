@@ -1341,3 +1341,55 @@ section {
     background-color: #fff;
   }
 }
+
+
+
+
+
+
+
+
+/* === STYLE DASAR CARD === */
+.icon-box {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center; /* agar isi card rata tengah */
+}
+
+/* Efek hover */
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === GRID RESPONSIF === */
+.col-lg-4.col-md-6.col-sm-12 {
+  display: flex;
+  justify-content: center; /* posisikan card di tengah horizontal */
+}
+
+/* Jarak antar kolom */
+.col-lg-4 {
+  margin-bottom: 20px;
+}
+
+/* === RESPONSIVE: SAAT LAYAR DI BAWAH 720PX === */
+@media (max-width: 720px) {
+  .container > .row {
+    justify-content: center; /* pastikan semua kolom di tengah */
+  }
+
+  .col-lg-4.col-md-6.col-sm-12 {
+    display: flex;
+    justify-content: center; /* posisi tiap card tetap tengah */
+  }
+
+  .icon-box {
+    width: 90%; /* supaya tidak full lebar */
+    max-width: 400px; /* biar tidak terlalu lebar di HP besar */
+  }
+}
