@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #444444;
 }
 
@@ -30,13 +30,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #main {
   margin-top: 50px;
 }
-
 
 @media screen and (max-width: 720px) {
   h1 {
@@ -49,9 +48,6 @@ h6 {
     width: 90% !important;
   }
 }
-
-
-
 
 @media (max-width: 992px) {
   #main {
@@ -74,7 +70,7 @@ h6 {
 }
 
 #preloader:before {
-  content: "";
+  content: '';
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
@@ -211,7 +207,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #888888;
@@ -227,8 +223,8 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
-  content: "";
+.navbar > ul > li > a:before {
+  content: '';
   position: absolute;
   width: 0;
   height: 2px;
@@ -241,7 +237,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -250,7 +246,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #222222;
 }
 
@@ -288,11 +284,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #34b7a7;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -304,21 +300,19 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
   visibility: visible;
 }
 
-
-
 @media (max-width: 1366px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -390,7 +384,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #34b7a7;
 }
 
@@ -425,11 +419,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #34b7a7;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -439,7 +433,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Landing_page.png") top right;
+  background: url('../img/Landing_page_update.jpeg') top right;
   background-size: cover;
 }
 
@@ -454,17 +448,14 @@ h6 {
   }
 }
 
-
 @media screen and (max-width: 720px) {
   #hero {
-    background: url("../img/Landing_page.png");
+    background: url('../img/Landing_page_update.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
   }
 }
-
 
 #hero h1 {
   margin: 0;
@@ -481,7 +472,7 @@ h6 {
 }
 
 #hero .btn-about {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
@@ -504,12 +495,10 @@ h6 {
   }
 }
 
-
-
 @media (max-width: 992px) {
   #hero:before {
-    content: "";
-    
+    content: '';
+
     position: absolute;
     bottom: 0;
     top: 0;
@@ -554,7 +543,7 @@ section {
 }
 
 .section-title h2::after {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 50px;
@@ -572,7 +561,9 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg-1.jpg") fixed center center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../img/bg-1.jpg') fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -588,7 +579,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -665,7 +656,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #222222;
 }
 
@@ -697,7 +688,7 @@ section {
 .facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
 }
 
@@ -806,7 +797,7 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #1d685f;
   margin-bottom: 10px;
 }
@@ -834,7 +825,7 @@ section {
 }
 
 .resume .resume-item::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 16px;
   height: 16px;
@@ -1021,7 +1012,7 @@ section {
 }
 
 .portfolio .portfolio-wrap::before {
-  content: "";
+  content: '';
   background: rgba(34, 34, 34, 0.6);
   position: absolute;
   left: 0;
@@ -1113,7 +1104,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1121,7 +1115,10 @@ section {
   border: 1px solid #34b7a7;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #34b7a7;
 }
 
@@ -1144,7 +1141,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1246,7 +1243,7 @@ section {
 }
 
 .contact .php-email-form .loading:before {
-  content: "";
+  content: '';
   display: inline-block;
   border-radius: 50%;
   width: 24px;
@@ -1277,7 +1274,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type='submit'] {
   background: #34b7a7;
   border: 0;
   padding: 10px 30px 12px 30px;
@@ -1286,7 +1283,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type='submit']:hover {
   background: #3dc8b7;
 }
 
@@ -1325,12 +1322,12 @@ section {
    ========================================== */
 @media screen and (min-width: 720px) {
   .portfolio-details-slider img {
-    width: auto !important;         /* biarkan mengikuti ukuran asli */
-    height: auto !important;        /* biarkan proporsi asli */
-    max-width: 100%;                /* agar tidak melebihi lebar container */
+    width: auto !important; /* biarkan mengikuti ukuran asli */
+    height: auto !important; /* biarkan proporsi asli */
+    max-width: 100%; /* agar tidak melebihi lebar container */
     display: block;
-    margin: 0 auto;                 /* tengah secara horizontal */
-    object-fit: contain;            /* jaga rasio tanpa crop */
+    margin: 0 auto; /* tengah secara horizontal */
+    object-fit: contain; /* jaga rasio tanpa crop */
   }
 
   /* Optional: kalau kamu ingin slider tetap punya background putih */
@@ -1341,13 +1338,6 @@ section {
     background-color: #fff;
   }
 }
-
-
-
-
-
-
-
 
 /* === STYLE DASAR CARD === */
 .icon-box {
